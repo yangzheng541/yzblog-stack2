@@ -1,7 +1,7 @@
 ---
 title: Hugo+Vercel 10分钟0成本搭建你的个人博客（一）！
 description: 第一篇博客文，简单做个技术分享啦~
-slug: 
+slug: Hugo+Vercel 10分钟0成本搭建你的个人博客（一）！
 date: 2024-07-20 14:55:00+0000
 image: cover.png
 categories:
