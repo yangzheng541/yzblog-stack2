@@ -4,10 +4,13 @@ description: 第一篇博客文，简单做个技术分享啦~
 slug: Hugo+Vercel 10分钟0成本搭建你的个人博客（一）！
 date: 2024-07-20 14:55:00+0000
 image: cover.png
+draft: falses
 categories:
-    - Example Category
-tags:
     - 技术分享
+tags:
+    - Hugo
+	- Vercel
+	- stack
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)  
 ---
 
@@ -120,8 +123,3 @@ PS：注意！在注册时，你应该直接使用<mark>Github账号授权注册
 [2]: https://www.namesilo.com/	"namesilo域名购买网站"
 
 在经过一系列的配置（也蛮复杂的）之后，你的网址即可正常访问啦！关于域名的配置，计划再开一章单独记录，详情请见后文叙述。
-
-
-
-
-

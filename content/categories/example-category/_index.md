@@ -1,6 +1,6 @@
 ---
-title: Example Category
-description: A description of this category
+title: 技术分享
+description: 关于编程、建站的一些技术分享
 image:
 
 # Badge style
