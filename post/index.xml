@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 信息小杨的博客</title><link>https://yzblog.top/post/</link><description>Recent content in Posts on 信息小杨的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 20 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://yzblog.top/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo+Vercel 10分钟0成本搭建你的个人博客（一）</title><link>https://yzblog.top/p/hugo-vercel-10%E5%88%86%E9%92%9F0%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A21/</link><pubDate>Sat, 20 Jul 2024 00:00:00 +0000</pubDate><guid>https://yzblog.top/p/hugo-vercel-10%E5%88%86%E9%92%9F0%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A21/</guid><description>&lt;img src="https://yzblog.top/p/hugo-vercel-10%E5%88%86%E9%92%9F0%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A21/cover.png" alt="Featured image of post Hugo+Vercel 10分钟0成本搭建你的个人博客（一）" />&lt;h2 id="前言">前言
+&lt;/h2>&lt;p>程序员的尽头众说纷纭，有人说是&lt;code>秃头&lt;/code>（叉掉），还有人说是咸鱼——但经研究发现，程序员还是爱写博客。虽然最近变成了非在编程序员，但暑假闲着无事，还是重拾起来了兴趣，决心做个博客起来。&lt;/p>
+&lt;p>然而逛了几圈阿里云，发现学生优惠已经处于不可用状态，3年的云服务器正常价格为600+。&lt;/p>
+&lt;p>&lt;img src="https://yzblog.top/p/hugo-vercel-10%E5%88%86%E9%92%9F0%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A21/image-20240720150733008.png"
+width="1532"
+height="524"
+srcset="https://yzblog.top/p/hugo-vercel-10%E5%88%86%E9%92%9F0%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A21/image-20240720150733008_hu085ef8d8ce1c31e1387277f9ca698a51_122021_480x0_resize_box_3.png 480w, https://yzblog.top/p/hugo-vercel-10%E5%88%86%E9%92%9F0%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A21/image-20240720150733008_hu085ef8d8ce1c31e1387277f9ca698a51_122021_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="image-20240720150733008"
+class="gallery-image"
+data-flex-grow="292"
+data-flex-basis="701px"
+>&lt;/p>
+&lt;p>本着能薅羊毛绝不妥协的精神，加之未发工资的囊中羞涩，最后选择了零成本建站。那么回想起听说过的零成本建站，无非就是GithubPage、GitteePage这两个平台。而Github选手，因为访问速度问题首先退赛。之后就是Gitee，但上了网站看了一圈后发现，Gitee居然已经停止服务了！（气抖冷）&lt;/p>
+&lt;p>&lt;img src="https://yzblog.top/p/hugo-vercel-10%E5%88%86%E9%92%9F0%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A21/image-20240720181503245.png"
+width="957"
+height="200"
+srcset="https://yzblog.top/p/hugo-vercel-10%E5%88%86%E9%92%9F0%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A21/image-20240720181503245_hu80b56f8a05cd6587c4f909ea78921120_19170_480x0_resize_box_3.png 480w, https://yzblog.top/p/hugo-vercel-10%E5%88%86%E9%92%9F0%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A21/image-20240720181503245_hu80b56f8a05cd6587c4f909ea78921120_19170_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="image-20240720181503245"
+class="gallery-image"
+data-flex-grow="478"
+data-flex-basis="1148px"
+>&lt;/p>
+&lt;p>再次寻找后，发现Vercel也是一个不错的平台。该平台可从Github中快速导入项目，并在其中直接部署，同时对Github的提交即时更新。此外，Vercel还免费提供了每个月100GB的访问带宽，对个人网站绰绰有余，还能支持各种模板，从Hugo、Huxo到Wordpress应有尽有。如此香的网站，没有不用的道理，搞它！&lt;/p>
+&lt;p>&lt;img src="https://yzblog.top/p/hugo-vercel-10%E5%88%86%E9%92%9F0%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A21/image-20240720151920029.png"
+width="1841"
+height="918"
+srcset="https://yzblog.top/p/hugo-vercel-10%E5%88%86%E9%92%9F0%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A21/image-20240720151920029_hu8d475213fa13530c1f6045e49a21c2e4_1149515_480x0_resize_box_3.png 480w, https://yzblog.top/p/hugo-vercel-10%E5%88%86%E9%92%9F0%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A21/image-20240720151920029_hu8d475213fa13530c1f6045e49a21c2e4_1149515_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="image-20240720151920029"
+class="gallery-image"
+data-flex-grow="200"
+data-flex-basis="481px"
+>&lt;/p>
+&lt;h2 id="hugo-stack博客框架">Hugo-Stack博客框架
+&lt;/h2>&lt;h3 id="认识hugo">认识Hugo
+&lt;/h3>&lt;p>首先，我们需要找到一款好用的博客项目。最好用的框架当然是Wordpress，但Wordpress过于臃肿，大多数功能对于我这一个小网站而言不常用到。轻量级的博客框架中，Hugo、Huxo、Typecho都是不错的选择，最终我选择了Hugo——该框架由Go语言开发，在渲染能力上略有优势。&lt;/p>
+&lt;blockquote>
+&lt;p>Hugo 是最受欢迎的开源静态站点生成器之一。凭借其惊人的速度和灵活性，Hugo 让构建网站再次变得有趣。——&lt;a class="link" href="https://gohugo.io/" target="_blank" rel="noopener"
+>The world’s fastest framework for building websites | Hugo (gohugo.io)&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>Hugo虽然没有Wordpress那么长的开发时间，但是也已经产生了许多美观的主题。Stack就是其中之一，该主题是卡片风格的博客主题，在Github上有4.6k的star，说它是最受欢迎的Hugo主题也不为过。于是，我们选用该主题制作博客。&lt;/p>
+&lt;p>&lt;img src="https://yzblog.top/p/hugo-vercel-10%E5%88%86%E9%92%9F0%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A21/image-20240720153353161.png"
+width="3000"
+height="1000"
+srcset="https://yzblog.top/p/hugo-vercel-10%E5%88%86%E9%92%9F0%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A21/image-20240720153353161_hu3501a192653784000430a669d915be3c_823123_480x0_resize_box_3.png 480w, https://yzblog.top/p/hugo-vercel-10%E5%88%86%E9%92%9F0%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A21/image-20240720153353161_hu3501a192653784000430a669d915be3c_823123_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="image-20240720153353161"
+class="gallery-image"
+data-flex-grow="300"
+data-flex-basis="720px"
+>&lt;/p>
+&lt;h3 id="从github上克隆stack主题">从Github上克隆Stack主题
+&lt;/h3>&lt;p>首先，你需要有一个Github账号。这是由于Vercel是需要关联到Github仓库的，我们需要将Stack主题克隆到自己仓库中。点击下方链接，访问到Stack的启动器仓库。并点击使用该模板。&lt;/p>
+&lt;p>&lt;img src="https://yzblog.top/p/hugo-vercel-10%E5%88%86%E9%92%9F0%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A21/156916624-20b2a784-f3a9-4718-aa5f-ce2a436b241f.png"
+width="1859"
+height="129"
+srcset="https://yzblog.top/p/hugo-vercel-10%E5%88%86%E9%92%9F0%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A21/156916624-20b2a784-f3a9-4718-aa5f-ce2a436b241f_hu889155243026c9e855f9deb8a7b06e37_21350_480x0_resize_box_3.png 480w, https://yzblog.top/p/hugo-vercel-10%E5%88%86%E9%92%9F0%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A21/156916624-20b2a784-f3a9-4718-aa5f-ce2a436b241f_hu889155243026c9e855f9deb8a7b06e37_21350_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="156916624-20b2a784-f3a9-4718-aa5f-ce2a436b241f"
+class="gallery-image"
+data-flex-grow="1441"
+data-flex-basis="3458px"
+>&lt;/p>
+&lt;p>点击成功后，该模板将成功到克隆到自己仓库之中。下一步，我们将在Vercel中对该模板进行导入。同样地，你也应该注册一个免费的Vercel账号。&lt;/p>
+&lt;p>PS：注意！在注册时，你应该直接使用&lt;mark>Github账号授权注册&lt;/mark>，这样在后面的导入项目中将更加方便！&lt;/p>
+&lt;h2 id="vercel导入及配置">Vercel导入及配置
+&lt;/h2>&lt;h3 id="stack主题的github文档纠错">Stack主题的Github文档纠错
+&lt;/h3>&lt;p>在上文的1号链接中，你可能发现在Stack启动器文档的最下方，有一个vercel的小字。点击展开，里面就描述了如何运用Vercel导入的方式。&lt;/p>
+&lt;p>&lt;img src="https://yzblog.top/p/hugo-vercel-10%E5%88%86%E9%92%9F0%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A21/image-20240720155309686.png"
+width="1115"
+height="625"
+srcset="https://yzblog.top/p/hugo-vercel-10%E5%88%86%E9%92%9F0%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A21/image-20240720155309686_hu9d08216f07178b0078e93e5eb3ac17fb_94566_480x0_resize_box_3.png 480w, https://yzblog.top/p/hugo-vercel-10%E5%88%86%E9%92%9F0%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A21/image-20240720155309686_hu9d08216f07178b0078e93e5eb3ac17fb_94566_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="image-20240720155309686"
+class="gallery-image"
+data-flex-grow="178"
+data-flex-basis="428px"
+>&lt;/p>
+&lt;p>然而，该方式存在错误！请勿按照该配置导入！！这个下载Go的指令已经失效了，并且需要的Hugo版本也不对（血泪的教训）。正确的导入配置如下所示。&lt;/p>
+&lt;h3 id="导入stack主题">导入Stack主题
+&lt;/h3>&lt;h4 id="创建项目">创建项目
+&lt;/h4>&lt;p>来到Vercel的控制台页面，点击右上角的ADD按钮，添加一个新的Project项目。&lt;/p>
+&lt;p>&lt;img src="https://yzblog.top/p/hugo-vercel-10%E5%88%86%E9%92%9F0%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A21/image-20240720155825445.png"
+width="1811"
+height="373"
+srcset="https://yzblog.top/p/hugo-vercel-10%E5%88%86%E9%92%9F0%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A21/image-20240720155825445_hu1d9231cd8e326f38e093241ca3365df5_78253_480x0_resize_box_3.png 480w, https://yzblog.top/p/hugo-vercel-10%E5%88%86%E9%92%9F0%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A21/image-20240720155825445_hu1d9231cd8e326f38e093241ca3365df5_78253_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="image-20240720155825445"
+class="gallery-image"
+data-flex-grow="485"
+data-flex-basis="1165px"
+>&lt;/p>
+&lt;h4 id="直接导入github项目">直接导入Github项目
+&lt;/h4>&lt;p>如果你在注册账号时使用的就是Github授权，那么在这里，你可以很方便的看到你已经公开的仓库。直接点击Import，导入即可。&lt;/p>
+&lt;p>&lt;img src="https://yzblog.top/p/hugo-vercel-10%E5%88%86%E9%92%9F0%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A21/image-20240720160331902.png"
+width="926"
+height="467"
+srcset="https://yzblog.top/p/hugo-vercel-10%E5%88%86%E9%92%9F0%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A21/image-20240720160331902_huacf5992497dcbaaeffaff24b2f7ad31d_47765_480x0_resize_box_3.png 480w, https://yzblog.top/p/hugo-vercel-10%E5%88%86%E9%92%9F0%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A21/image-20240720160331902_huacf5992497dcbaaeffaff24b2f7ad31d_47765_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="image-20240720160331902"
+class="gallery-image"
+data-flex-grow="198"
+data-flex-basis="475px"
+>&lt;/p>
+&lt;h4 id="构建项目">构建项目
+&lt;/h4>&lt;h5 id="参数设置">参数设置
+&lt;/h5>&lt;ul>
+&lt;li>
+&lt;p>第一个空填写项目名称，这里随便填写即可；&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>第二个空框架选择Hugo；&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>第三个空是根目录设置，这个我们不必管它；&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>第四个空是构建命令，这里我们需要打开覆写按钮并输入下面的代码，该代码用于Hugo的编译运行。&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"> hugo --gc --minify
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ul>
+&lt;li>第五个空是下载命令，用于下载编译所需的go环境。需要注意的是一定要加上-y这个参数，因为yum下载golang时需要确认，-y为无需确认的参数配置，如果不加则会卡死在等待确认的过程中。下载命令如下：&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"> yum install -y golang
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;img src="https://yzblog.top/p/hugo-vercel-10%E5%88%86%E9%92%9F0%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A21/image-20240720160753639.png"
+width="1045"
+height="823"
+srcset="https://yzblog.top/p/hugo-vercel-10%E5%88%86%E9%92%9F0%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A21/image-20240720160753639_huc77f15a0264e54c455ba4472b55d317a_59208_480x0_resize_box_3.png 480w, https://yzblog.top/p/hugo-vercel-10%E5%88%86%E9%92%9F0%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A21/image-20240720160753639_huc77f15a0264e54c455ba4472b55d317a_59208_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="image-20240720160753639"
+class="gallery-image"
+data-flex-grow="126"
+data-flex-basis="304px"
+>&lt;/p>
+&lt;h5 id="环境变量设置">环境变量设置
+&lt;/h5>&lt;p>环境变量用于设置Hugo的版本，在这里我们设置&lt;mark>Hugo版本为0.129.0（最新版本）&lt;/mark>，填好后点击ADD添加。Stack的文档中给的是0.93.2的版本，导致我运行失败，多次检查后才发现该问题&amp;hellip;.QAQ&lt;/p>
+&lt;p>&lt;img src="https://yzblog.top/p/hugo-vercel-10%E5%88%86%E9%92%9F0%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A21/image-20240720162051060.png"
+width="1021"
+height="354"
+srcset="https://yzblog.top/p/hugo-vercel-10%E5%88%86%E9%92%9F0%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A21/image-20240720162051060_hu0c351cee54b3af9d7e196e402006434d_34145_480x0_resize_box_3.png 480w, https://yzblog.top/p/hugo-vercel-10%E5%88%86%E9%92%9F0%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A21/image-20240720162051060_hu0c351cee54b3af9d7e196e402006434d_34145_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="image-20240720162051060"
+class="gallery-image"
+data-flex-grow="288"
+data-flex-basis="692px"
+>&lt;/p>
+&lt;h4 id="部署项目">部署项目
+&lt;/h4>&lt;p>完成上述配置后，点击Deploy即可直接部署。不出意外的话，等待20s左右，项目即可部署成功。&lt;/p>
+&lt;p>&lt;img src="https://yzblog.top/p/hugo-vercel-10%E5%88%86%E9%92%9F0%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A21/image-20240720162146466.png"
+width="1037"
+height="119"
+srcset="https://yzblog.top/p/hugo-vercel-10%E5%88%86%E9%92%9F0%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A21/image-20240720162146466_hu4e784ebea101d480bed54ff471f37f08_3228_480x0_resize_box_3.png 480w, https://yzblog.top/p/hugo-vercel-10%E5%88%86%E9%92%9F0%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A21/image-20240720162146466_hu4e784ebea101d480bed54ff471f37f08_3228_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="image-20240720162146466"
+class="gallery-image"
+data-flex-grow="871"
+data-flex-basis="2091px"
+>&lt;/p>
+&lt;p>&lt;img src="https://yzblog.top/p/hugo-vercel-10%E5%88%86%E9%92%9F0%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A21/image-20240720162401396.png"
+width="1570"
+height="389"
+srcset="https://yzblog.top/p/hugo-vercel-10%E5%88%86%E9%92%9F0%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A21/image-20240720162401396_hu8f05514211bfdfe6f64701db61baac06_28965_480x0_resize_box_3.png 480w, https://yzblog.top/p/hugo-vercel-10%E5%88%86%E9%92%9F0%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E4%BD%A0%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A21/image-20240720162401396_hu8f05514211bfdfe6f64701db61baac06_28965_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="image-20240720162401396"
+class="gallery-image"
+data-flex-grow="403"
+data-flex-basis="968px"
+>&lt;/p>
+&lt;h2 id="域名配置">域名配置
+&lt;/h2>&lt;p>当部署完成后，你会进入到一个完结撒花的页面，中间有我们刚刚成功部署的网站。然而，你发现点击进去后，无论等待多久，似乎都无法加载出来——这是因为Vercel的域名遭到了&lt;code>DNS污染&lt;/code>，无法直接访问。&lt;/p>
+&lt;p>所以，如果你想要你的网站能够正常访问的话。还是需要付出一点小小的代价——购买域名（腾讯云上，&lt;u>最便宜的一年只要5元&lt;/u>，四舍五入也约等于零成本了）。购买域名的网站有很多，包括国内的腾讯云、阿里云，国外的namesilo之类的都可以，在这里我选择的是namesilo购买。&lt;/p>
+&lt;p>在经过一系列的配置（也蛮复杂的）之后，你的网址即可正常访问啦！关于域名的配置，计划再开一章单独记录，详情请见后文叙述。&lt;/p></description></item></channel></rss>
